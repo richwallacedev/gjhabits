@@ -13,6 +13,8 @@ type AppLayoutProps = {
   children: React.ReactNode;
 };
 
+export const dynamic = "force-dynamic";
+
 export default async function AppLayout({ children }: AppLayoutProps) {
   const supabase = await createClient();
   const {
